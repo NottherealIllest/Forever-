@@ -3,6 +3,7 @@ window.addEventListener('load', () => {
     const overlays = [...document.querySelectorAll('.greeting-header')];
     const loaderImg = document.querySelector('.loader-img');
     const logoText = document.querySelector('.navText');
+    const letShow = document.querySelector('.dont-show');
 
 
     const animInterval = setInterval(() => {
@@ -26,12 +27,13 @@ window.addEventListener('load', () => {
                     loaderImg.style.opacity = 0;
                     loaderImg.style.touchAction = 'none';
                     logoText.style.display = 'none';
+                    letShow.style.display = 'block';
 
                 }, 3500);
 
             }, 300)
         }
 
-    }, 500);
+    }, 700);
 
 });
