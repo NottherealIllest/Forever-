@@ -696,6 +696,11 @@
             margin-left: -3rem;
         }
         
+        .artist:hover {
+            transform: scale(1.1);
+            transition: all .2s ease-in-out;
+        }
+        
         .artist-name {
             font-family: Lato;
             font-style: normal;
