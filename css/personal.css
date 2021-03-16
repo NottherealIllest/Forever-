@@ -218,6 +218,8 @@
         
         .player-indicator {
             transform: rotate(90deg);
+            height: 100%;
+            width: 100%;
         }
         
         .btn {
@@ -231,6 +233,7 @@
             justify-content: center;
             position: relative;
             cursor: pointer;
+            padding: 0;
         }
         
         .btn-icon {
