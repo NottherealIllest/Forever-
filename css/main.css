@@ -696,6 +696,11 @@
             margin-left: -3rem;
         }
         
+        .artist:hover {
+            transform: scale(1.1);
+            transition: all .2s ease-in-out;
+        }
+        
         .artist-name {
             font-family: Lato;
             font-style: normal;
@@ -757,5 +762,26 @@
         }
         
         .scroll {
+            text-align: center;
+        }
+
+
+        .not-allowed{
+            height: 100vh;
+            width: 100%;
+            background: #000;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: grid;
+            place-items: center;
+            color: #fff;
+            font-size: 16px;
+            z-index: 10000;
+        }
+
+        .not-allowed h2{
+            color: #ccc;
+            font-size: 18px;
             text-align: center;
         }

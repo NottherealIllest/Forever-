@@ -37,3 +37,27 @@ window.addEventListener('load', () => {
     }, 700);
 
 });
+
+(() => {
+    const windowWidth = window.innerWidth;
+    
+    if(windowWidth < 1000){
+        document.body.innerHTML = `<div class="not-allowed">
+            <h2>You'll need a wider screen to view this app</h2>
+        </div>`;
+    }
+    
+    window.addEventListener('resize', e => {
+        const windowWidth = window.innerWidth;
+        const notAllowed = document.querySelector('.not-allowed');
+    
+        if(windowWidth < 1000 && !notAllowed){
+            window.location.reload();
+        }
+
+        if(windowWidth > 999 && notAllowed){
+            window.location.reload();
+        }
+    
+    })
+})();

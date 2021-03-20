@@ -1,73 +1,249 @@
-.banner {
-    margin: 0;
-}
-
-li {
-    font: lato;
-}
-
-.center {
-    width: 40%;
-    margin: 2rem auto;
-}
-
-.bring-up {
-    margin-top: -15%;
-}
-
-.link {
-    display: inline-block;
-    margin-top: 10%;
-    font-family: Alegreya Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.2rem;
-    line-height: 13px;
-    text-decoration: none !important;
-    /* identical to box height */
-    color: #FFC8C8;
-    margin-bottom: 10%;
-}
-
-.text-desc {
-    font-size: 1.3rem;
-}
-
-footer .link::after {
-    display: none;
-}
-
-.link::after {
-    position: absolute;
-    content: "";
-    left: 10%;
-    width: 4rem;
-    margin-top: 1.6rem;
-    border-bottom: solid 3px #FFC8C8;
-}
-
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    color: #fff;
-}
-
-@media screen and (max-width: 1024px) {
-    .container {
-        width: 80%;
-        margin: 2rem auto;
-        margin-top: 5%;
-    }
-    h2 {
-        font-size: 3rem;
-        line-height: 4rem;
-    }
-    .banner img {
-        width: 100%;
-    }
-    p {
-        font-size: 0.8rem;
-    }
-}
+        body {
+            background-color: #272727;
+            overflow: hidden;
+        }
+        
+        .navText {
+            display: inline-block;
+            position: relative;
+            padding: 5%;
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+            color: #FFFFFF;
+        }
+        
+        .nav {
+            display: flex;
+            flex-direction: row;
+            margin: unset;
+            padding: unset;
+            justify-content: space-between;
+            align-items: center
+        }
+        
+        hr {
+            background: #FFFFFF;
+            opacity: 0.2;
+        }
+        
+        .logo {
+            display: inline-block;
+            position: relative;
+            padding: 5%;
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+            color: #FFFFFF;
+        }
+        
+        .navText::after {
+            position: absolute;
+            content: "";
+            left: 40%;
+            bottom: 3.8rem;
+            width: 2rem;
+            border-bottom: solid 2px #FFf;
+        }
+        
+        .container-lg {
+            width: 90%;
+            margin: unset;
+            padding: unset;
+            margin: auto;
+        }
+        
+        .page-name {
+            text-transform: uppercase;
+            color: #FFf;
+        }
+        
+        .artist {
+            position: relative;
+            margin-top: -20%;
+        }
+        
+        .image-right {
+            position: absolute;
+            right: 0;
+            margin-top: 8.5%;
+            margin-right: -5%;
+        }
+        
+        .artist-profile-right {
+            position: relative;
+        }
+        
+        .text-quote {
+            position: relative;
+        }
+        
+        .quote {
+            color: #FFFFFF;
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.5rem;
+            line-height: 2rem;
+            text-align: right;
+            color: #C2C2C2;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: 20% 0 0 -11%;
+        }
+        
+        .quote-icon {
+            /* “ */
+            position: absolute;
+            left: 50%;
+            margin: 3% 0 0 15%;
+            font-family: Times;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20rem;
+            text-align: right;
+            text-transform: uppercase;
+            color: #C2C2C2;
+        }
+        
+        .disc-link {
+            /* See discography */
+            width: 100%;
+            text-align: right;
+            font-family: Lato;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 0.8rem;
+            text-decoration-line: underline;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            opacity: 0.5;
+        }
+        
+        .prev-artist {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 20%;
+        }
+        
+        .number {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 3rem;
+            text-align: right;
+            color: #fff;
+            transform: rotate(90deg);
+            align-self: center;
+            margin-bottom: -10%;
+        }
+        
+        .song-title {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 19.1547px;
+            line-height: 23px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+        
+        .song {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: bold;
+            font-size: .9rem;
+            line-height: 1.5rem;
+            color: #C2C2C2;
+        }
+        
+        .player {
+            position: absolute;
+            margin-left: 5%;
+            padding-top: 65vh;
+        }
+        
+        h1 {
+            font-family: sans-serif;
+            font-weight: 100;
+            letter-spacing: -1px;
+        }
+        
+        #container {
+            display: inline-block;
+            position: relative;
+            height: 50px;
+            margin: 0 30px;
+            width: 150px;
+            overflow: hidden;
+        }
+        
+        section {
+            position: absolute;
+            bottom: 0;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .music-bar {
+            padding: 0;
+            margin: 0 2px 0 0;
+            position: relative;
+            bottom: 0;
+            display: inline-block;
+            height: 1px;
+            width: 5px;
+            border-radius: 5px;
+            vertical-align: bottom;
+            background-color: #fff;
+            background-blend-mode: multiply;
+            opacity: .5;
+        }
+        
+        .row {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end
+        }
+        
+        .ml-5 {
+            margin: 0 1rem;
+        }
+        
+        .player-indicator {
+            transform: rotate(90deg);
+            height: 100%;
+            width: 100%;
+        }
+        
+        .btn {
+            background: transparent;
+            outline: none;
+            border: 0;
+            height: 50px;
+            width: 50px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            cursor: pointer;
+            padding: 0;
+        }
+        
+        .btn-icon {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
